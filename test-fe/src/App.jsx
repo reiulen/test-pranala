@@ -74,7 +74,7 @@ function App() {
         <h1>Result</h1>
         <div
           dangerouslySetInnerHTML={{
-            __html: data?.data?.replace(/\n/g, "<br/>"),
+            __html: data?.type === "triangle" ? data?.data?.replace(/\n/g, "<br/>") : data?.data,
           }}
         ></div>
       </div>

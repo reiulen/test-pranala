@@ -67,6 +67,7 @@ app.post("/generate", (req, res) => {
       status: true,
       message: "Berhasil generate triangle",
       data: result,
+      type: type,
     },
     200
   );
